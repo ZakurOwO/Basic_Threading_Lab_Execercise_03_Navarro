@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblStatus = new System.Windows.Forms.Label();
             this.btnStartandStop = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblStatus
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(98)))), ((int)(((byte)(106)))));
-            this.label1.Location = new System.Drawing.Point(32, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(293, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "-Before starting thread-";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.lblStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(98)))), ((int)(((byte)(106)))));
+            this.lblStatus.Location = new System.Drawing.Point(32, 9);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(293, 31);
+            this.lblStatus.TabIndex = 0;
+            this.lblStatus.Text = "-Before starting thread-";
+            this.lblStatus.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnStartandStop
             // 
@@ -56,6 +56,7 @@
             this.btnStartandStop.TabIndex = 1;
             this.btnStartandStop.Text = "Start";
             this.btnStartandStop.UseVisualStyleBackColor = false;
+            this.btnStartandStop.Click += new System.EventHandler(this.btnStartandStop_Click);
             // 
             // Form1
             // 
@@ -64,7 +65,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(199)))));
             this.ClientSize = new System.Drawing.Size(356, 217);
             this.Controls.Add(this.btnStartandStop);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblStatus);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -75,7 +76,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.Button btnStartandStop;
     }
 }

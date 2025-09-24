@@ -47,6 +47,7 @@
             // btnStartandStop
             // 
             this.btnStartandStop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(205)))), ((int)(((byte)(199)))));
+            this.btnStartandStop.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnStartandStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.btnStartandStop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(98)))), ((int)(((byte)(106)))));
             this.btnStartandStop.Location = new System.Drawing.Point(92, 72);

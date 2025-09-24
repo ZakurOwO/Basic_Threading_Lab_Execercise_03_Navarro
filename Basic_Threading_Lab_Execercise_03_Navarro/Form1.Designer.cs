@@ -42,7 +42,7 @@
             this.lblStatus.Size = new System.Drawing.Size(293, 31);
             this.lblStatus.TabIndex = 0;
             this.lblStatus.Text = "-Before starting thread-";
-            this.lblStatus.Click += new System.EventHandler(this.label1_Click);
+       
             // 
             // btnStartandStop
             // 
@@ -68,7 +68,7 @@
             this.Controls.Add(this.lblStatus);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+         
             this.ResumeLayout(false);
             this.PerformLayout();
 

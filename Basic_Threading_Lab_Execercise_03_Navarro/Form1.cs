@@ -1,38 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using System.Runtime.InteropServices;
 using System.Threading;
+using System.Windows.Forms;
 
 namespace Basic_Threading_Lab_Execercise_03_Navarro
 {
-    public partial class Form1: Form
+    public partial class Form1 : Form
     {
+        [DllImport("kernel32.dll")]
+        static extern bool AllocConsole();
+
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
+            AllocConsole();
         }
 
         private void btnStartandStop_Click(object sender, EventArgs e)
         {
+            btnStartandStop.Text = "Stop";
+
+            Console.WriteLine("-Before starting thread-");
+
             Thread ThreadA = new Thread(MyThreadClass.Thread1);
             Thread ThreadB = new Thread(MyThreadClass.Thread1);
 
+            ThreadA.Name = "Thread A";
+            ThreadB.Name = "Thread B";
 
             ThreadA.Start();
             ThreadB.Start();
@@ -40,8 +34,8 @@ namespace Basic_Threading_Lab_Execercise_03_Navarro
             ThreadA.Join();
             ThreadB.Join();
 
+            Console.WriteLine("-End of Thread-");
             lblStatus.Text = "-End Of Thread-";
-
         }
     }
 }

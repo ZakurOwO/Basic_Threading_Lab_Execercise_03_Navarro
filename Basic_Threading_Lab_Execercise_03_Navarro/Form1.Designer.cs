@@ -36,6 +36,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(98)))), ((int)(((byte)(106)))));
             this.label1.Location = new System.Drawing.Point(32, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(293, 31);
@@ -45,18 +46,21 @@
             // 
             // btnStartandStop
             // 
+            this.btnStartandStop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(205)))), ((int)(((byte)(199)))));
             this.btnStartandStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.btnStartandStop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(98)))), ((int)(((byte)(106)))));
             this.btnStartandStop.Location = new System.Drawing.Point(92, 72);
             this.btnStartandStop.Name = "btnStartandStop";
             this.btnStartandStop.Size = new System.Drawing.Size(160, 84);
             this.btnStartandStop.TabIndex = 1;
             this.btnStartandStop.Text = "Start";
-            this.btnStartandStop.UseVisualStyleBackColor = true;
+            this.btnStartandStop.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(241)))), ((int)(((byte)(199)))));
             this.ClientSize = new System.Drawing.Size(356, 217);
             this.Controls.Add(this.btnStartandStop);
             this.Controls.Add(this.label1);

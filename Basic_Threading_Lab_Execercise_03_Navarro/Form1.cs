@@ -37,7 +37,11 @@ namespace Basic_Threading_Lab_Execercise_03_Navarro
             ThreadA.Start();
             ThreadB.Start();
 
-           
+            ThreadA.Join();
+            ThreadB.Join();
+
+            lblStatus.Text = "-End Of Thread-";
+
         }
     }
 }
